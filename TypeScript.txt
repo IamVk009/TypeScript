@@ -1,0 +1,156 @@
+
+TypeScript :-
+-------------
+
+> TypeScript is a superset of JavaScript or it is an extension of JavaScript.
+
+> Ts works as transpiler (A source code to source code compiler), that converts ES6 related Js code to the ES5 related JS code.
+
+> It means Ts works as a transpiler as well as it is superset of Js.
+
+> It is an opensource strongly typed language.
+
+> TypeScript was released in 2012 and it was develpoed and maintained by the Microsoft.
+
+> Note:- Every Js program is also a Ts program, but vice-versa is not true.
+
+> Ts follows the same syntax and scemantics as JS with some aditional features like :-
+
+1.Static type checking
+
+2.Statement compilation
+
+3.Some other advance features
+
+> TS has all features of ES6 + some extra features like :-
+
+1. Interface
+2. Access modifiers
+3. Enum
+4. Generics
+5. Tuples
+6. Annotations (decorators)
+
+
+> Ts code is written in a file with .ts extension
+
+> Ts code /file should be compiled/transpiled by using ts compiler/transpiler
+
+> Once we compile a .ts file we will get a .js file (ES5 compatable js code)
+
+Installing Typescript:-
+------------------------
+> Open cmd
+
+> Using npm:-
+
+> npm install -g typescript [Here -g is used to install TypeScript globally inside the system rather than installing it in particular directory.]
+
+> To verify 
+
+> tsc -v
+
+
+Difference between JavaScript and TypeScript :  
+==============================================
+		
+		JavaScript 				                      TypeScript
+
+1.Js supports dynamic typing                   1. Ts supports static typing
+(No need to define data type of variables)	      (Need to define data type of the variables)			
+
+2.Errors are discovered only during runtime	   2. Errors are discovered during compile time
+
+3.Browsers can execute Js code directly	       3. Browsers can not execute Ts code directly, Ts code need to be translated into js code
+							                     
+  which is then executed by the browser.
+
+4.Js was originally not designed to develop    4. With Ts we can develop large and complex 
+  large scale,complex applications. 		          application very esily.
+
+
+5.Js (ES6 and later) supports many new         5. Ts supports all the new features of Js and some advance Object Oriented 
+  features like classes, inheritence, arrow       features.
+  functions, Promises, etc.    
+
+
+> Ts is a strongly typed language which means once we assigned a value of specific data type to a var then we can't change the data type of that var.
+
+> Typed variables means defining variables with the data type.
+
+# Advantages of typed variables:-
+---------------------------------
+
+1. We can't assign the value of a datatype other that the declared datatype of a variable.
+
+2. It is used to enforce the typechecking, at the compile time only it detect the error.
+
+3. It improves the readablilty and maintainability of code in large application.
+
+Datatypes in Ts:-
+-----------------
+
+> It supports all the JS datatypes and some extra datatypes.
+
+> Js data types :
+
+1. number
+2. string
+3. boolean
+
+> Extra Data types supported by Ts :
+
+1. any
+2. Tuple
+3. Enum
+4. void
+5. Array
+
+
+
+
+
+Modules in TS :-
+==============
+
+> A module is a reusable piece of code that encapsulate implementation details and exposes a public api, so it can be easily 
+  loaded and used by other code.
+
+> Module concept came in ES6, where instead of putting all the elements (variables,functions,classes,etc ) in one file,
+  we can seperate them in multiple files and each file will be called as a module.
+
+> Module concept breaks a large application into multiple files.
+
+> We can export one element from one module and can import that element inside other module.
+
+> Mainly we have one index.ts file which going to use(import) other elements from other modules.
+
+> All modules are executed within their own scope, not in a global scope.
+
+> Variables,functions,classes,etc declared in a module are not visible outside the module unless they are explicitly exported.
+
+> To consume the elements which are exported from different modules, they has to be imported.
+
+> Keywords to import and export elements -
+
+  1. export 
+
+  2. import
+
+
+Advantages of Modules In TS :-
+----------------------------
+
+1. It help the developers to organize and maintain the large code.
+
+2. It abstract the complex implementation from outside.
+
+3. It encapsulates the code.
+
+4. We can reuse the code in diff module by importing it.
+
+5. Manages dependencies i.e. we can easily migrate from one dependencies to other dependencies.
+
+**Note:- The TS file/Js file will be considerd as module only when it exports atleast one element.
+
+
