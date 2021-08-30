@@ -1,4 +1,4 @@
-var emp;
+var emp;  
 
 emp = {
     id: 100,
