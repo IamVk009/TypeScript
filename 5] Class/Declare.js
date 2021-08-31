@@ -1,6 +1,6 @@
-// Class declaration.
+
 var Employee = /** @class */ (function () {
-    // Constructor
+
     function Employee(name, address, salary) {
         this.name = name;
         this.address = address;

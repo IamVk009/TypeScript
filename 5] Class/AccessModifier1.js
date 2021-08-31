@@ -1,7 +1,5 @@
 var Employee2 = /** @class */ (function () {
-    // Constructor
-    // If we add public access modifier to the constructor arguments, then those variables will become instance var automatically.
-    // So we need not specify them outside constructor.
+
     function Employee2(name, address, salary) {
         this.name = name;
         this.address = address;
@@ -16,7 +14,7 @@ var Employee2 = /** @class */ (function () {
 }());
 var emp4 = new Employee2("Ramesh", "Delhi", 12000);
 emp4.show();
-// We can access all the public variables from here also.
+
 console.log(emp4.name);
 console.log(emp4.address);
 console.log(emp4.salary);

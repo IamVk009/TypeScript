@@ -1,4 +1,4 @@
-// Purpose of abstract => User should not create the object of a class rather he should extend the class.
+
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = function (d, b) {
         extendStatics = Object.setPrototypeOf ||
@@ -27,14 +27,13 @@ var Dog = /** @class */ (function (_super) {
     function Dog() {
         return _super !== null && _super.apply(this, arguments) || this;
     }
-    // Dog class must implement the abstract method from Animal class.
+  
     Dog.prototype.bark = function () {
         console.log("Animal is barking");
     };
     return Dog;
 }(Animal));
-// We Cannot create an instance of an abstract class.
-// let a = new Animal();
+
 var d = new Dog();
 d.move();
 d.bark();
