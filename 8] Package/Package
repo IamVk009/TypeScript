@@ -1,0 +1,73 @@
+package.json:-
+=============
+
+> When we want to create a modular TypeScript project, basically we create a node project.
+
+> To initialize a node project we use -  
+
+    npm init
+
+> give default instructions:-
+
+{
+  "name": "package",
+  "version": "1.0.0",
+  "description": "\"First ever node project\"",
+  "main": "index.js",
+  "scripts": {
+    "start": "tsc index.ts && node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Lucifer",
+  "license": "ISC"
+}
+
+> After that we get a file called package.json, it is similar to pom.xml in java (maven project)
+
+> Add this property before the "test" property
+
+    start":"tsc index.ts && node index.js",
+
+> To run this entire project :-
+
+    npm start
+
+Import 3rd Party library :-
+===========================
+
+> To download and install Lodash use following command - 
+
+     npm install  lodash --save
+
+> The above command will do following things :
+
+   > Download the lodash library in our application in "node_module" folder.
+   > Make an entry in package.json file inside "dependencies" section
+   > Will create a new file called "package-lock.json"
+
+> In order to use this lodash library we need to install its type defination also (type defination is nothing but api information about lodash):
+
+    npm install @types/lodash --save-dev (Here -dev means it should be used only in development environment and not in production environment) 
+
+> Using above command the type defination of lodash will be installed in our application in devDependencies.
+
+> node_modules : It is similar to maven dependencies in java, where all the dependecies are installed.
+
+> package.json : It is similar to pom.xml, where all the dependencies are listed.
+
+> While sharing node application or pushing it to git repo, we don't share or push the node_modules folder.
+
+> After sharing user just need to open a project in an IDE and run following command in order to install all the required dependencies.
+
+    npm install
+
+> Above command will goto "package.json" file and will install all the dependencies specified there.
+
+> Semantic Versioning : 
+
+  Major version:Minor version:Patch version
+
+    ^4.17.21 :- 4.x 
+
+    ~4.17.21 :- 4.17.x
+ 
